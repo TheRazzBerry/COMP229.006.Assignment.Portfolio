@@ -13,6 +13,7 @@ const port = 3000;
 app.use(express.static('public'));
 app.use('/css', express.static(__dirname + 'public/css'));
 app.use('/img', express.static(__dirname + 'public/img'));
+app.use('/docs', express.static(__dirname + 'public/docs'));
 
 app.use(expressLayouts);
 app.set('layout', 'layouts/default.ejs');

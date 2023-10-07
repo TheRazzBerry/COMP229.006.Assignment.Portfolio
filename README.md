@@ -1,2 +1,1 @@
-# TheRazzBerry
- TheRazzBerry Global Portfolio
+TheRazzBerry Global Portfolio

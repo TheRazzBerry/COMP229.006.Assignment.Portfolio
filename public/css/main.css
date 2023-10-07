@@ -1,0 +1,65 @@
+/* Razeen Rahman - 300877261 - 2023.10.07 */
+/* main.css */
+
+/* Variables */
+:root {
+    --clr_bg: #0e0d1d;
+    --clr_text: #FEFEFE;
+    --clr_textHover: #3EB4EB;}
+
+/* Testing Element Styles */
+* {
+    outline: solid 0px #FEFEFE; }
+
+/* General Element Styles */
+body {
+    background-color: var(--clr_bg);
+    font-family: 'Courier New'; color: var(--clr_text);
+    padding: 0px; margin: 0px; }
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit; }
+
+/* Main Element Styles */
+@media only screen and (max-width: 1024px) {
+    #banner {
+        height: 72px; }
+    .bannerLogo { 
+        float: center;
+        height: 32px; }
+    .bannerNav { 
+        float: center; }
+}
+@media only screen and (min-width: 1025px) {
+    #banner {
+        height: 32px; }
+    .bannerLogo { 
+        float: left;
+        height: 32px; }
+    .bannerNav { 
+        float: right; }
+}
+#banner {
+    position: flex;
+    line-height: 32px;
+    top: 0px; left: 0px; right: 0px;
+    padding: 16px;
+    font-size: 18px;
+    text-align: center; }
+.bannerNav a { 
+    transition: color 0.2s; }
+.bannerNav a:hover { 
+    color: var(--clr_textHover); }
+
+.content {
+    position: flex;
+    left: 0px; right: 0px;
+    padding: 16px; }
+
+/* Footer Styles */
+footer {
+    position: absolute;
+    bottom: 0px; left: 0px; right: 0px;
+    padding: 8px;
+    text-align: center; }

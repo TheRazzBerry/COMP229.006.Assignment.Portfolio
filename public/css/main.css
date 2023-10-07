@@ -3,13 +3,14 @@
 
 /* Variables */
 :root {
-    --bg: linear-gradient(180deg, #0E0D1D, #231F44);
+    --bg: linear-gradient(0deg, #0E0D1D, #231F44);
     --white: #FEFEFE;
     --dark: #0E0D1D;
     --accent: #4b8faf; }
 
 /* Testing Element Styles */
 * { outline: solid 0px #FEFEFE; }
+.content { outline: solid 0px #FEFEFE; }
 
 /* General Element Styles */
 html {
@@ -32,7 +33,10 @@ a {
         float: center;
         height: 32px; }
     .bannerNav { 
-        float: center; }}
+        float: center; }
+    .splashLink {
+        white-space: nowrap;
+    }}
 @media only screen and (min-width: 1025px) {
     #banner {
         height: 32px; }
@@ -58,30 +62,42 @@ a {
 
 /* Content Styles */
 .content {
-    outline: solid 0px #FEFEFE;
     position: flex;
     left: 0px; right: 0px; }
+
+.splash {
+    padding: 24px 64px; }
+
 .splashText {
     text-align: left;
     font-weight: bold; }
-.splash {
-    padding: 24px 64px; }
+.splashTitle {
+    font-size: 48px;
+    text-decoration: underline;
+}
 .splashHeader {
-    font-size: 48px; }
+    font-size: 32px; }
 .splashSubHeader {
     font-size: 24px;
-    padding: 8px; }
+    padding: 16px; }
+.splashNorm {
+    font-size: 24px;
+    padding: 24px; }
+
 .splashLink {
+    margin: 16px; }
+.splashLink a {
     border: solid 1px #FEFEFE;
-    padding: 16px; margin: 16px;
+    padding: 16px 64px;
     text-shadow: 0px 0px 3px #222222;
     transition: 0.5s }
-.splashLink:hover {
+.splashLink a:hover {
     background: var(--accent); }
 
-/* Footer Styles */
-footer {
-    position: absolute;
-    bottom: 0px; left: 0px; right: 0px;
-    padding: 8px;
+/* Alignment Styles */
+.alignLeft {
+    text-align: left; }
+.alignCenter {
     text-align: center; }
+.alignRight {
+    text-align: right; }

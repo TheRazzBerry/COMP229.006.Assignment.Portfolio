@@ -2,8 +2,8 @@
 <!-- index.ejs -->
 
 <div class="content splash">
-    <div class="splashText splashHeader alignLeft">RazzBerry Technologies</div>
-    <div class="splashText splashNorm">
+    <div class="splashText splashTitle alignCenter">RazzBerry Technologies</div>
+    <div class="splashText splashSubHeader">
         Welcome to my portfolio! Feel free to take a look around.
     </div>
     <div class="splashText splashSubHeader alignLeft">
@@ -40,4 +40,34 @@
     <div class="splashLink alignLeft">
         <a href="contact">Contact</a>
     </div>
+</div>
+
+<div class="content splash">
+    <script>
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        
+        var name = '';
+        var email = '';
+        var text = '';
+
+        if(urlParams.get('name') != null) {
+            name = urlParams.get('name');
+        }
+        if(urlParams.get('email') != null) {
+            email = urlParams.get('email');
+        }
+        if(urlParams.get('emailContact') != null) {
+            text = urlParams.get('emailContact');
+        }
+
+        if(name != '' && email != '' && text != '') {
+            document.write('<div class="splashText splashHeader">Form Information</div>');
+            document.write('<div class="splashText splashSubHeader">');
+            document.write('> Name: ' + name + '<br>');
+            document.write('> Email: ' + email + '<br>');
+            document.write('> Text: ' + text);
+            document.write('</div>');
+        }
+    </script>
 </div>

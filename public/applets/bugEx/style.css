@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #FEFEFE;
+    text-align: center;
+}
+
+#game_hud {
+    margin-left: auto;
+    margin-right: auto;
+    width: 780px;
+    padding: 10px;
+    text-align: left;
+}
+
+#game_title {
+    display: inline-block;
+    font-family: Impact;
+    font-size: 48px;
+    color: #333333;
+    text-shadow: 0px 0px 3px #999999;
+}
+
+#game_resetScore, #game_resetSpeed {
+    padding: 20px;
+    width: 398px;
+    border: none;
+    border-radius: 5px;
+    background: #FEFEFE;
+    box-shadow: 0px 0px 5px #999999;
+    font-family: Impact;
+    font-size: 24px;
+    color: #333333;
+    cursor: pointer;
+    text-shadow: 0px 0px 3px #999999;
+    transition: 0.2s;
+}
+
+#game_resetScore:hover, #game_resetSpeed:hover {
+    background: #333333;
+    color: #FEFEFE;
+} 
